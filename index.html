@@ -1,19 +1,34 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title></title>
+        <title>Biglietti treno</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
         <!--Sezione alta pagina-->
-        <header></header>
+        <header> 
+            <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+        </header>
 
         <!--Sezione centrale pagina-->
-        <main></main>
+        <main>
+            <form>
+                <label for="name">Nome</label>
+                <input type="text" id="name">
+                <label for="cognome">Cognome</label>
+                <input type="text" id="surName">
+                <label for="distanza">Distanza da percorrere</label>
+                <input type="text" id="distance">
+                <label for="et&agrave;">Et&agrave;</label>
+                <input type="text" id="age">
+                <input type="button" id="calculateButton" value="Calcola">
+            </form>
+            <h1 id="tot-prezzo"></h1>
+        </main>
 
         <!-- Sezione bassa pagina-->
         <footer></footer>
-        <script src="script.js"></script>
+        <script src="JS/script.js"></script>
     </body>
 </html>
