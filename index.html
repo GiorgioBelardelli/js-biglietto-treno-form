@@ -3,28 +3,62 @@
     <head>
         <title>Biglietti treno</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
         <!--Sezione alta pagina-->
         <header> 
-            <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+            <ul>
+                <li><a href="#">Chi siamo</a></li>
+                <li><a href="#">Cerca il biglietto</a></li>
+                <li><a href="#">Assistenza</a></li>
+                <li><a href="#">Area riservata</a></li>
+            </ul>
         </header>
 
         <!--Sezione centrale pagina-->
         <main>
-            <form>
-                <label for="name">Nome</label>
-                <input type="text" id="name">
-                <label for="cognome">Cognome</label>
-                <input type="text" id="surName">
-                <label for="distanza">Distanza da percorrere</label>
-                <input type="text" id="distance">
-                <label for="et&agrave;">Et&agrave;</label>
-                <input type="text" id="age">
-                <input type="button" id="calculateButton" value="Calcola">
-            </form>
-            <h1 id="tot-prezzo"></h1>
+
+            <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+
+            <wrapper id="form-wrapper">
+                <form id="formTicket">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" placeholder="inserisci il tuo nome">
+                    <label for="cognome">Cognome</label>
+                    <input type="text" id="surName" placeholder="inserisci il tuo cognome">
+                    <label for="distanza">Distanza</label>
+                    <input type="text" id="distance" placeholder="inserisci la distanza che devi percorrere in Km">
+                    <label for="et&agrave;">Et&agrave;</label>
+                    <input type="text" id="age" placeholder="inserisci la tua et&agrave;">
+                    <input type="button" id="calculateButton" value="Calcola">
+                </form>
+            </wrapper>
+            
+            <wrapper>
+                <div id="userTicket">
+                    <h2>Dettaglio passeggeri</h2>
+                    <table id="userInfo">
+                        <tr>
+                            <th class="greenTh">Nome Passeggero</th>
+                            <th>Offerta</th>
+                            <th>Carrozza</th>
+                            <th>Costo biglietto</th>
+                        </tr>
+                        <tr>
+                            <td class="greenTh" id="nomePasseggero"></td>
+                            <td>Biglietto Standard</td>
+                            <td>69</td>
+                            <td id="prezzo"></td>
+                        </tr>
+                    </table>    
+                </div>
+                
+            </wrapper>
+            
         </main>
 
         <!-- Sezione bassa pagina-->

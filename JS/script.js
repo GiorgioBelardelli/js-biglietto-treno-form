@@ -41,8 +41,9 @@ calculateButton.addEventListener("click",
         ticketPrice = ticketPrice * elderSale;
 
         };
-
-        document.getElementById("tot-prezzo").innerHTML = "Il costo del tuo biglietto e' di: " + ticketPrice + " euro"
+        // document.getElementById("tot-prezzo").innerHTML = "Il costo del tuo biglietto e' di: " + ticketPrice + " euro"
+        document.getElementById("nomePasseggero").innerHTML = nomeUser + " " + cognomeUser;
+        document.getElementById("prezzo").innerHTML = ticketPrice;
     }
 
 );
