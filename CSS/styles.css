@@ -75,6 +75,7 @@ main h1{
 
 #userTicket{
     margin: 10rem auto;
+    display: none;
 }
 
 #userInfo{
@@ -82,10 +83,11 @@ main h1{
     text-align: center;
     width: 50rem;
     margin: 1rem auto;
-    padding: 1rem;
+    padding: 0;
 }
 
 .greenTh{
     background-color: #006c67;
     color: #fff;
+    padding: 1rem;
 }

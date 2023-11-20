@@ -43,9 +43,9 @@ calculateButton.addEventListener("click",
         };
         // document.getElementById("tot-prezzo").innerHTML = "Il costo del tuo biglietto e' di: " + ticketPrice + " euro"
         document.getElementById("nomePasseggero").innerHTML = nomeUser + " " + cognomeUser;
-        document.getElementById("prezzo").innerHTML = ticketPrice;
+        document.getElementById("prezzo").innerHTML = ticketPrice + " &#8364;";
+        document.getElementById("userTicket").style.display = 'block';
     }
-
 );
 
 
